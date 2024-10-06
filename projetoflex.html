@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu FlexBox</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 700px )">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <nav>
-            <a href="#">Opção 1</a>
-            <a href="#">Opção 2</a>
-            <a href="#">Opção 3</a>
-            <a href="#">Opção 4</a>
-            <a href="#">Opção 5</a>
-            <a href="#">Opção 6</a>
+        <nav >
+            <span id="item" class="material-symbols-outlined" onclick="clickMenu()">menu </span>
+            <menu id="menu">
+                <a href="#">Opção 1</a>
+                <a href="#">Opção 2</a>
+                <a href="#">Opção 3</a>
+                <a href="#">Opção 4</a>
+                <a href="#">Opção 5</a>
+                <a href="#">Opção 6</a>
+            </menu>
         </nav>
     </header>
     <main>
@@ -23,5 +28,13 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, asperiores neque facilis incidunt illo illum quibusdam. Magnam, sed? Aut nostrum voluptates totam inventore quasi explicabo molestiae cum nisi corporis praesentium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ut vel cum aspernatur aperiam, ab consequatur magni. Minus delectus facere nihil consectetur non omnis sequi magni? Voluptas suscipit illo hic. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda incidunt inventore laudantium enim obcaecati voluptas culpa commodi eum quia? Architecto iure ex odit temporibus quod. Reprehenderit harum ex repudiandae blanditiis? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla eaque nam, placeat ipsa sed aspernatur aperiam ipsum quis nisi tenetur similique quaerat accusamus dolor aliquam blanditiis ea enim exercitationem deserunt?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti libero similique corporis maiores? Modi quidem est cupiditate at accusantium, dolore alias quia esse impedit cum, unde voluptates illum praesentium consectetur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam error quos reprehenderit suscipit maiores modi eos placeat ipsam voluptates tempora magni mollitia ut, labore vero laborum ratione, explicabo beatae sit.</p>
     </main>
+    <script>
+        function clickMenu(){
+            if (menu.style.display == 'block'){
+                menu.style.display = 'none'
+            } else 
+                menu.style.display == 'block'
+        }
+    </script>
 </body>
 </html>

@@ -26,18 +26,21 @@ header{
 }
 
 header > h1{
-    border: 1px dotted black;
-    flex: 0 0 200px
+    /*border: 1px dotted black;*/
+    flex: 0 0 200px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.505);
 }
 
+
+
 nav{
-    border: 1px dotted black;
+   /* border: 1px dotted black;*/
 
     display: flex;
 
 }
 
-header > nav > a {
+a {
     background-color: rgb(98, 98, 98);
     color: white;
     padding: 10px;
@@ -47,9 +50,10 @@ header > nav > a {
     text-align: center;
 }
 
+
 a:hover{
     background-color: black;
-    transition: background-color .5s;
+    transition: background-color .3s;
 }
 main{
     background-color: white;
